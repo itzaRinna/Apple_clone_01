@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+/*Global*/
 *,
 *::before,
 *::after{
@@ -21,6 +23,8 @@ a{
     margin: 0 auto;
     padding: 0 2.2rem;
 }
+
+/*START OF NAVBAR*/
 
 header{
     position: fixed;
@@ -73,24 +77,16 @@ header{
     background: url(images/icons/bag.svg) center no-repeat;
 }
 
+/*END OF NAVBAR*/
+
+/*START OF 1ST Section*/
+
 .iphone-11-pro{
     background: url(images/hero/iphone-11-pro/iphone_11_pro_large.jpg);
     margin-top: 4.4rem;
 }
 
-.hero{
-    height: 69.2rem;
-    background-size: auto 73.6rem;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-top: .6rem solid #fff;
-    border-bottom: .6rem solid #fff;
-}
-
-.iphone-11-pro{
-    border-top: none;
-}
-
+/*Heading of Hero*/
 .title{
     padding-top: 5.5rem;
     color: #fff;
@@ -103,6 +99,7 @@ header{
     word-spacing: -0.75rem;
 }
 
+/*Sub Heading of Hero*/
 .title-sub-heading{
     font-size: 2.65rem;
     margin-top: .6rem;
@@ -110,11 +107,14 @@ header{
     word-spacing: -0.75rem;
 }
 
+/*Price*/
 .title-price{
     color: #888;
     margin-top: .68rem;
     font-size: 1.7rem;
 }
+
+/*START OF CTA Section*/
 
 .cta{
     text-align: center;
@@ -130,4 +130,76 @@ header{
 
 .cta-link:nth-child(2){
     margin-left: 2.6rem;
+}
+
+.cta-link:hover{
+    color: #0089f9;
+    transition: .4s ease-in;
+}
+
+/*END OF CTA SECTION*/
+
+/*END OF 1ST Section*/
+
+.iphone-11{
+    background: url(images/hero/iphone-11/iphone_11_large.jpg);
+}
+
+.title-dark{
+    color: #000;
+}
+
+.cta-link-darker{
+    color: #0070c9;
+}
+
+.cta-link-darker:hover{
+    color: #01325b;
+    transition: .4s ease-in;
+}
+
+.watch{
+    background: url(images/hero/watch/watch_large.jpg);
+}
+
+.title-heading-watch{
+    height: 7.8rem;
+    background: url(images/hero/watch/logo_watch_medium.png) center no-repeat;
+    background-size: auto 7.8rem;
+    margin-top: 1.6rem;
+}
+
+
+/*Hero Tags - NEED TO STAY AT BOTTOM*/
+.hero{
+    height: 69.2rem;
+    background-size: auto 73.6rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top: .6rem solid #fff;
+    border-bottom: .6rem solid #fff;
+}
+
+.iphone-11-pro{
+    border-top: none;
+}
+
+/*END*/
+
+@media screen and (max-width:1068px){
+    .iphone-11-pro{
+        background: url(images/hero/iphone-11-pro/iphone_11_pro_medium.jpg);
+    }
+    .iphone-11{
+        background: url(images/hero/iphone-11/iphone_11_medium.jpg);
+    }
+    .watch{
+        background: url(images/hero/watch/watch_medium.jpg);
+    }
+    .hero{
+        height: 65rem;
+        background-size: auto;
+        background-position: bottom center;
+        background-repeat: no-repeat;
+    }
 }
