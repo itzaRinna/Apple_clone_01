@@ -100,4 +100,34 @@ header{
 .title-heading{
     font-size: 5.6rem;
     line-height: 1.07143;
+    word-spacing: -0.75rem;
+}
+
+.title-sub-heading{
+    font-size: 2.65rem;
+    margin-top: .6rem;
+    letter-spacing: .0008rem;
+    word-spacing: -0.75rem;
+}
+
+.title-price{
+    color: #888;
+    margin-top: .68rem;
+    font-size: 1.7rem;
+}
+
+.cta{
+    text-align: center;
+    margin-top: 1.8rem;
+}
+
+.cta-link{
+    color: #66bbff;
+    font-size: 2.1rem;
+    display: inline;
+    word-spacing: -0.75rem;
+}
+
+.cta-link:nth-child(2){
+    margin-left: 2.6rem;
 }
